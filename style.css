@@ -1,51 +1,14 @@
 .wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  font-weight: bold;
-  text-align: center;
+  width: 960px;
+  margin: auto;
+  font-family: Helvetica,Georgia, Verdana, "Geneva", Georgia, Arial, "Times New Roman", Courier;
+  max-width: 75ch;
+  line-height: 1.5;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 2px dashed;
+  background-color: white;
 }
-
-.wrapper>* {
-  padding: 10px;
-  flex: 1 100%;
-}
-
-.header {
-  background: tomato;
-}
-
-.footer {
-  background: lightgreen;
-}
-
-.main {
-  text-align: left;
-  background: deepskyblue;
-}
-
-.aside-right {
-  background: hotpink;
-}
-
-@media all and (min-width:550px) {
-  .aside {
-    flex: 1 auto;
-  }
-}
-
-@media all and (min-width:800px) {
-  .main {
-    flex: 3 0px;
-    order: 1;
-  }
-  .aside-right {
-    order: 2;
-  }
-  .footer {
-    order: 4;
-  }
-}
-
 body {
-  padding: 2em;
+  background-color: darkgrey;
 }
